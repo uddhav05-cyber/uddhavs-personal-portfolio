@@ -1,0 +1,53 @@
+{
+  "updates": [
+    {
+      "id": "update-2025-02",
+      "type": "monthly-update",
+      "category": "blog",
+      "title": "February 2025 - Monthly Update",
+      "date": "2025-02-21",
+      "description": "This month I focused on portfolio rebuild with modern tech stack, implemented Mandi and Bharat Setu projects, and enhanced my DevOps skills with Kubernetes and CI/CD pipelines.",
+      "tags": ["monthly-update", "devops", "projects", "learning"],
+      "image": "assets/images/2021.png",
+      "featured": true
+    },
+    {
+      "id": "achievement-gold-medal-2024",
+      "type": "achievement",
+      "category": "highlight",
+      "title": "Gold Medalist - DPU 2024",
+      "date": "2024-05-15",
+      "description": "Awarded Gold Medal for academic excellence in Bachelor of Computer Application with 7.80 CGPA and first class with distinction.",
+      "tags": ["achievement", "academic", "gold-medal"],
+      "image": "assets/images/goldmedal.png",
+      "featured": true
+    },
+    {
+      "id": "update-2025-01",
+      "type": "monthly-update",
+      "category": "blog",
+      "title": "January 2025 - Monthly Update",
+      "date": "2025-01-15",
+      "description": "Started the year with learning advanced Kubernetes concepts, completed AWS certification preparation, and contributed to open-source projects.",
+      "tags": ["monthly-update", "kubernetes", "aws", "open-source"],
+      "image": "assets/images/Devops.png",
+      "featured": false
+    },
+    {
+      "id": "achievement-perforce-2024",
+      "type": "achievement",
+      "category": "highlight",
+      "title": "Joined Perforce as DevOps Engineer",
+      "date": "2024-12-01",
+      "description": "Started my journey as a DevOps Engineer at Perforce, specializing in full-scale CI/CD, Kubernetes, and automation infrastructure.",
+      "tags": ["achievement", "career", "devops", "perforce"],
+      "image": "assets/images/Devops.png",
+      "featured": true
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2025-02-21",
+    "totalUpdates": 4,
+    "version": "1.0.0"
+  }
+}

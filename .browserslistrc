@@ -1,0 +1,17 @@
+# Browsers that we support
+# Requirements: 19.1, 19.2, 19.3, 19.4, 19.5
+
+# Modern browsers (latest 2 versions)
+last 2 Chrome versions
+last 2 Firefox versions
+last 2 Safari versions
+last 2 Edge versions
+
+# Additional coverage for older but still used browsers
+> 0.5%
+not dead
+not IE 11
+
+# Mobile browsers
+iOS >= 12
+Android >= 6

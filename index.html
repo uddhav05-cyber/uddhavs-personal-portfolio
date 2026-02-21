@@ -1,0 +1,2083 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uddhav's - Personal Portfolio</title>
+
+  
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  
+  <script type="module" src="/src/main.js"></script>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  
+
+  <main>
+
+    
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Uddhavbhople" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Uddhav Bhople">Uddhav Bhople</h1>
+
+          <p class="title"> Software Engineering Student & Aspiring AI Engineer
+          </p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:uddhavbhople5@gmail.com" class="contact-link">uddhavbhople5@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+919022447409" class="contact-link">+91 9022447409<br></a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">Feb 06, 2006</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Pune, Maharashtra, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://wa.me/9022447409" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/uddhav__v/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/uddhav-bhople/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/uddhav05-cyber" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <button class="social-link" onclick="showContactPage()"
+              style="background: none; border: none; padding: 0; cursor: pointer;">
+              <ion-icon name="mail-outline"></ion-icon>
+            </button>
+          </li>
+
+
+
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    
+
+    <div class="main-content">
+
+      
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Spotlight</button>
+          </li>
+
+          <li class="navbar-item">
+            <a href="assets/images/uddhav_resume.pdf" class="navbar-link" target="_blank">CV</a>
+          </li>
+
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Who Am I ?
+            <strong><em>Intelligence is what I build. Natural Intelligence is what I bring.</strong></em>
+          <p>
+           I’m a BTech Computer Engineering student at DY Patil University, Pune, driven by a mission to build scalable, 
+           intelligent, and impactful technology solutions. My expertise lies in Full-Stack Development, AI integration,
+           and Cloud Technologies, where I combine innovation and technical depth to develop solutions that make a 
+           real-world difference.
+          </p>
+          <p>
+            I’ve worked on projects like FarmConnect, a farmer–buyer marketplace, a housing market data visualization
+            in Tableau, a smart education platform with AI-powered learning features, and my personal portfolio website
+            — each reflecting my commitment to purposeful, user-centric design and engineering excellence.
+          </p>
+          <p>
+           As a Google Student Ambassador and Web Development Intern at YUVA – NSDC, I’ve gained valuable experience in 
+           building modern web applications, fostering community collaboration, and contributing to technology-driven 
+           initiatives. Alongside, I’m continuously expanding my expertise in cloud computing and DevOps practices 
+           across AWS, Azure, and GCP to architect scalable and production-ready systems.
+          </p>
+          <p>
+           Certified in Oracle Cloud Infrastructure AI Foundations, Saylor Academy AI, and IBM Data Science, I’m
+           committed to continuous learning, innovation, and using technology to create meaningful impact.
+            </p>
+        </section>
+
+
+        
+
+        <section class="service">
+
+          <h3 class="h3 service-title">TOOLS AND TECHNOLOGY EXPOSURE</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src=".\assets\images\mlops.png" alt="design icon" width="100">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">MLOps</h4>
+
+                <p class="service-item-text">
+                  Experience in automating Highly Scalable infrastructure for Machine Learning workflows.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src=".\assets\images\Rag.png" alt="design icon" width="100">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">RAG</h4>
+
+                <p class="service-item-text">
+                  Specialized in Retrieval-Augmented Generation (RAG) pipelines for building advanced AI solutions that
+                  combine large language models with real-time, domain-specific data retrieval for accurate and
+                  context-aware responses.
+                </p>
+              </div>
+
+            </li>
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src=".\assets\images\n8n.webp" alt="design icon" width="100">
+              </div>
+              
+
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Agentic AI(N8n)</h4>
+
+                <p class="service-item-text">
+                  I design autonomous agents that integrate large language models with real-time data, enabling dynamic
+                  decision-making, automated actions, and seamless interaction across cloud and enterprise systems.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src=".\assets\images\sikit.jpeg" alt="design icon" width="100">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Scikit-learn</h4>
+
+                <p class="service-item-text">
+                  Proficient in using Scikit-learn, the essential Python library for classical machine learning, to
+                  implement a wide range of algorithms for classification, regression, clustering, and dimensionality
+                  reduction in various data science projects.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/numpy/numpy-icon.svg" alt="NumPy icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">NumPy</h4>
+
+                <p class="service-item-text">
+                  Fundamental package for scientific computing in Python, providing support for large multi-dimensional arrays and matrices, along with mathematical functions for efficient numerical operations.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" alt="Pandas icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Pandas</h4>
+
+                <p class="service-item-text">
+                  Powerful data manipulation and analysis library for Python, providing data structures like DataFrames for efficient handling of structured data, time series, and statistical operations.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="TensorFlow icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">TensorFlow</h4>
+
+                <p class="service-item-text">
+                  Open-source machine learning framework for building and deploying ML models. Experience in developing neural networks, deep learning models, and production-ready AI applications.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/java/java-icon.svg" alt="Java icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Java</h4>
+
+                <p class="service-item-text">
+                  Object-oriented programming language widely used for enterprise applications, Android development, and backend systems. Proficient in Java fundamentals, OOP concepts, and application development.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">C Programming</h4>
+
+                <p class="service-item-text">
+                  Foundational programming language for system programming and embedded systems. Strong understanding of memory management, pointers, and low-level programming concepts.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">HTML & CSS</h4>
+
+                <p class="service-item-text">
+                  Core web technologies for building responsive and accessible web interfaces. Proficient in semantic HTML5, modern CSS3, Flexbox, Grid, and responsive design principles.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">JavaScript</h4>
+
+                <p class="service-item-text">
+                  Dynamic programming language for web development. Experience in ES6+, asynchronous programming, DOM manipulation, and building interactive web applications.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">React</h4>
+
+                <p class="service-item-text">
+                  Modern JavaScript library for building user interfaces. Proficient in component-based architecture, hooks, state management, and creating dynamic single-page applications.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" alt="Express icon" width="40" style="filter: invert(1);">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Express.js</h4>
+
+                <p class="service-item-text">
+                  Minimal and flexible Node.js web application framework. Experience in building RESTful APIs, middleware implementation, and server-side application development.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg" alt="FastAPI icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">FastAPI</h4>
+
+                <p class="service-item-text">
+                  Modern, high-performance Python web framework for building APIs. Proficient in creating fast, type-safe REST APIs with automatic documentation and async support.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Node.js</h4>
+
+                <p class="service-item-text">
+                  JavaScript runtime for building scalable server-side applications. Experience in event-driven architecture, npm ecosystem, and full-stack JavaScript development.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" alt="VS Code icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">VS Code & Kiro</h4>
+
+                <p class="service-item-text">
+                  Proficient in modern development environments including Visual Studio Code and Kiro AI-powered IDE. Experience with extensions, debugging tools, and productivity workflows.
+                </p>
+              </div>
+
+            </li>
+
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src=".\assets\images\pytorch.png" alt="design icon" width="100">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Pytorch</h4>
+
+                <p class="service-item-text">
+                  Proficient in using Pytorch, a powerful open-source machine learning library, to build and train deep
+                  learning models for various applications, including computer vision and natural language processing.
+                </p>
+              </div>
+
+            </li>
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src=".\assets\images\KNN.png" alt="design icon" width="100">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">K-Nearest Neighbors (KNN) & Random Forest</h4>
+
+                <p class="service-item-text">
+                  Proficient in using K-Nearest Neighbors (KNN) and Random Forest algorithms for classification and
+                  regression tasks, leveraging their strengths in handling complex datasets and providing accurate
+                  predictions.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src=".\assets\images\bedrock.png" alt="design icon" width="100">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">RAG with Amazon Bedrock</h4>
+
+                <p class="service-item-text">
+                  Retrieval-Augmented Generation (RAG) techniques with Amazon Bedrock to enhance the capabilities of
+                  generative AI models, enabling them to access and utilize external knowledge sources for improved
+                  context and accuracy.
+                </p>
+              </div>
+
+            </li>
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src=".\assets\images\prophet.png" alt="design icon" width="100">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Prophet & Darts</h4>
+
+                <p class="service-item-text">
+                  Proficient in using Prophet and Darts for time series forecasting, enabling accurate predictions and
+                  insights for various business applications.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src=".\assets\images\cat.png" alt="design icon" width="100">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Catboost</h4>
+
+                <p class="service-item-text">
+                  Proficient in using Catboost for time series forecasting, enabling accurate predictions and insights
+                  for various business applications.
+                </p>
+              </div>
+
+            </li>
+
+
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src=".\assets\images\Devops.png" alt="design icon" width="100">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Automated Infrastructure</h4>
+
+                <p class="service-item-text">
+                  Experience in automating Highly Scalable infrastructure .
+                </p>
+              </div>
+
+            </li>
+
+
+
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/linux/linux-icon.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Linux</h4>
+
+                <p class="service-item-text">
+                  A powerful, open-source operating system known for its security, stability, and flexibility.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" alt="Web development icon"
+                  width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Amazon Web Services</h4>
+
+                <p class="service-item-text">
+                  A leading cloud platform offering scalable, reliable, and cost-effective infrastructure and services
+                  for businesses of all sizes.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg"
+                  alt="Web development icon" width="110">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">GCP</h4>
+
+                <p class="service-item-text">
+                  I have hands-on experience with Google Kubernetes Engine (GKE) and am currently participating in
+                  Google's Gen AI Exchange Program to further deepen my expertise in cloud-native and AI technologies.
+                </p>
+              </div>
+
+            </li>
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-ar21.svg"
+                  alt="Web development icon" width="110">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Microsoft Azure</h4>
+
+                <p class="service-item-text">
+                  I Earned 117 badges and 22 trophies on Microsoft Learn, highlighting my expertise in Azure and Azure
+                  pipelines.
+                </p>
+              </div>
+
+            </li>
+
+
+
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/golang/golang-ar21.svg" alt="Web development icon"
+                  width="80">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Go Lang</h4>
+
+                <p class="service-item-text">
+                  I successfully migrated an entire PHP application to Go, implementing 20 microservices to showcase my
+                  expertise in backend migration and development.
+                </p>
+              </div>
+
+            </li>
+
+
+
+
+
+
+
+
+            <li class="service-item">
+
+
+
+
+              <div class="service-icon-box">
+                <img src=".\assets\images\download1.png" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Python</h4>
+
+                <p class="service-item-text">
+                  A versatile and popular programming language known for its simplicity, readability, and extensive
+                  libraries, perfect for web development, data analysis, and automation.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://raw.githubusercontent.com/itsksaurabh/itsksaurabh/master/assets/docker.gif"
+                  alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Docker</h4>
+
+                <p class="service-item-text">
+                  A containerization platform that simplifies application deployment by enabling consistent environments
+                  across development, testing, and production.
+                </p>
+              </div>
+
+            </li>
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://raw.githubusercontent.com/itsksaurabh/itsksaurabh/master/assets/k8s.gif"
+                  alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Kubernetes</h4>
+
+                <p class="service-item-text">
+                  An open-source orchestration system for automating the deployment, scaling, and management of
+                  containerized applications.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://raw.githubusercontent.com/itsksaurabh/itsksaurabh/master/assets/cicd.gif"
+                  alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">CI-CD</h4>
+
+                <p class="service-item-text">
+
+                  A suite of AWS services and tools enabling continuous integration and continuous delivery (CI/CD)
+                  pipelines,
+                  facilitating automated software delivery from code commit to deployment.
+                </p>
+              </div>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://raw.githubusercontent.com/itsksaurabh/itsksaurabh/master/assets/terraform.gif"
+                  alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Terraform</h4>
+
+                <p class="service-item-text">
+                  An infrastructure as code tool by HashiCorp, Terraform simplifies and automates provisioning and
+                  management of cloud infrastructure across multiple providers with declarative configuration files.
+                </p>
+              </div>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://raw.githubusercontent.com/DARK-art108/ItsRitesh/master/assets/ll.png"
+                  alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Jenkins</h4>
+
+                <p class="service-item-text">
+
+                  An open-source automation server used for continuous integration and continuous delivery (CI/CD),
+                  enabling developers to automate build, test, and deployment processes across various platforms.
+                </p>
+              </div>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/ansible/ansible-icon.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Ansible</h4>
+
+                <p class="service-item-text">
+
+                  A powerful open-source automation tool used for configuration management, application deployment, and
+                  task orchestration, facilitating efficient IT infrastructure management across servers and
+                  environments.
+                </p>
+              </div>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Git and Github</h4>
+
+                <div>
+                  <p class="service-item-text">
+                    1)Git: Version control system for tracking code changes and enabling collaboration.<br>
+                    2)GitHub: Web-based platform hosting Git repositories for collaborative software development.
+                  </p>
+                </div>
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/github/github-ar21.svg" alt="camera icon" width="80">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Github Actions</h4>
+
+                <p class="service-item-text">
+                  I have hands-on experience in implementing CI/CD pipelines using GitHub Actions for seamless
+                  automation and deployment.
+                </p>
+              </div>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/hq720.png" alt="camera icon" width="100">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AWS CICD</h4>
+
+                <p class="service-item-text">
+                  Automated software release pipelines on AWS, from code repository to deployment, ensuring efficient
+                  and reliable delivery.
+                </p>
+              </div>
+
+
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/grafana/grafana-ar21.svg" alt="camera icon" width="80">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Grafana</h4>
+
+                <p class="service-item-text">
+                  I have expertise in using Grafana for monitoring, visualizing metrics, and setting up real-time alerts
+                  to ensure system reliability.
+                </p>
+              </div>
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/prometheusio/prometheusio-ar21.svg" alt="camera icon"
+                  width="80">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Prometheus</h4>
+
+                <p class="service-item-text">
+                  I have experience with Prometheus for monitoring, collecting time-series data, and setting up alerts
+                  to track system performance and health.
+                </p>
+              </div>
+
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/elastic/elastic-ar21.svg" alt="camera icon" width="80">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Elastic Search</h4>
+
+                <p class="service-item-text">
+                  I have experience with Elasticsearch for powerful search, real-time analytics, and indexing large
+                  volumes of data for efficient querying and insights.
+                </p>
+              </div>
+
+
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/redis/redis-ar21.svg" alt="camera icon" width="80">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Redis</h4>
+
+                <p class="service-item-text">
+                  Redis for in-memory data storage, caching, and improving application performance through fast,
+                  scalable data retrieval.
+                </p>
+              </div>
+
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg" alt="camera icon"
+                  width="80">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Django</h4>
+
+                <p class="service-item-text">
+                  Django for building robust, scalable web applications with efficient backend frameworks and seamless
+                  database integration.
+                </p>
+              </div>
+
+
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/palletsprojects_flask/palletsprojects_flask-ar21.svg"
+                  alt="camera icon" width="80">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Flask</h4>
+
+                <p class="service-item-text">
+                  Flask for developing lightweight, flexible web applications with a simple and extensible framework for
+                  Python-based backends.
+                </p>
+              </div>
+
+
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://avatars.githubusercontent.com/u/7894478?s=200&v=4" alt="camera icon" width="80">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Gin</h4>
+
+                <p class="service-item-text">
+                  Gin for building high-performance, lightweight web applications in Go, leveraging its fast routing and
+                  middleware capabilities.
+                </p>
+              </div>
+
+
+
+
+
+
+
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/mongodb.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mongo Database</h4>
+
+                <p class="service-item-text">
+                  A leading NoSQL database known for its flexibility, scalability, and high performance, designed to
+                  handle unstructured data in modern applications with ease.
+                </p>
+              </div>
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/sql.png" alt="camera icon" width="100">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">My SQL</h4>
+
+                <p class="service-item-text">
+                  A popular open-source relational database management system (RDBMS) known for its reliability,
+                  performance, and ease of use, widely used for web applications and enterprise solutions alike.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg" alt="PostgreSQL icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">PostgreSQL</h4>
+
+                <p class="service-item-text">
+                  Advanced open-source relational database with robust features for complex queries, data integrity, and scalability. Widely used for enterprise applications requiring high performance and reliability.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg" alt="Kafka icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Apache Kafka</h4>
+
+                <p class="service-item-text">
+                  Distributed event streaming platform for building real-time data pipelines and streaming applications. Experience in implementing high-throughput, fault-tolerant messaging systems.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg" alt="RabbitMQ icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">RabbitMQ</h4>
+
+                <p class="service-item-text">
+                  Message broker for asynchronous communication between microservices. Proficient in implementing reliable message queuing, routing, and delivery patterns for distributed systems.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/helmsh/helmsh-icon.svg" alt="Helm icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Helm</h4>
+
+                <p class="service-item-text">
+                  Kubernetes package manager for streamlining application deployment and management. Experience in creating Helm charts for complex microservices architectures and managing releases.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/argoprojio/argoprojio-icon.svg" alt="ArgoCD icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">ArgoCD</h4>
+
+                <p class="service-item-text">
+                  GitOps continuous delivery tool for Kubernetes. Expertise in implementing declarative, version-controlled application deployments with automated sync and rollback capabilities.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/nginx/nginx-icon.svg" alt="NGINX icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">NGINX</h4>
+
+                <p class="service-item-text">
+                  High-performance web server, reverse proxy, and load balancer. Proficient in configuring NGINX for optimal performance, SSL/TLS termination, and microservices routing.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Postman & API Testing</h4>
+
+                <p class="service-item-text">
+                  Comprehensive API development and testing platform. Experience in creating automated API test suites, documentation, and integration testing workflows.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://www.vectorlogo.zone/logos/atlassian_jira/atlassian_jira-icon.svg" alt="Jira icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Jira & Agile</h4>
+
+                <p class="service-item-text">
+                  Project management and issue tracking tool. Proficient in Agile methodologies, sprint planning, and managing development workflows in collaborative team environments.
+                </p>
+              </div>
+
+
+          </ul>
+
+
+        </section>
+
+        </ul>
+
+        </section>
+
+
+        
+
+        <section class="ACHIVEMENTS">
+
+          <h3 class="h3 testimonials-title">ACHIVEMENTS</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/goldmedal.png" alt="GOLDMEDALIST DPU 2024" width="40"
+                    data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Microsoft Beta-MLSA 2026</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Awarded Beta milestone status by Microsoft for exceptional advancement within the Microsoft Learn Student Ambassador global community
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/2021.png" alt="Best Performer in 2021-2022" width="40"
+                    data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Successful performer</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Recognized for achievements in computer applications .
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            
+
+
+            
+
+            <div class="modal-container" data-modal-container>
+
+              <div class="overlay" data-overlay></div>
+
+              <section class="testimonials-modal">
+
+                <button class="modal-close-btn" data-modal-close-btn>
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+
+                <div class="modal-img-wrapper">
+                  <figure class="modal-avatar-box">
+                    <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                  </figure>
+
+                  <img src="./assets/images/icon-quote.svg" alt="quote icon">
+                </div>
+
+                <div class="modal-content">
+
+                  <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                  <time datetime="2021-06-14">19 January, 2026</time>
+
+                  <div data-modal-text>
+                    <p>
+                      Richard was hired to create a corporate identity. We were very pleased with the work done. She has
+                      a
+                      lot of experience
+                      and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                      consectetur adipiscing
+                      elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                    </p>
+                  </div>
+
+                </div>
+
+              </section>
+
+            </div>
+
+
+            
+
+            <section class="clients">
+
+              <h3 class="h3 clients-title"></h3>
+
+              <ul class="clients-list has-scrollbar">
+
+                <li class="clients-item">
+                  <a href="#">
+                    
+                  </a>
+                </li>
+
+                <li class="clients-item">
+                  <a href="#">
+                    
+                  </a>
+                </li>
+
+                <li class="clients-item">
+                  <a href="#">
+                    
+                  </a>
+                </li>
+
+                <li class="clients-item">
+                  <a href="#">
+                    
+                  </a>
+                </li>
+
+                <li class="clients-item">
+                  <a href="#">
+                    
+                  </a>
+                </li>
+
+                <li class="clients-item">
+                  <a href="#">
+                    
+                  </a>
+                </li>
+
+              </ul>
+
+            </section>
+
+      </article>
+
+
+
+
+
+      
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Google Gen AI Program<br>GoogleCloud</h4>
+              <span>Currently Pursuing</span>
+              <p class="timeline-text">
+                Currently enrolled in Google’s Gen AI Exchange Program focused on generative AI, LLMs, and ethical AI
+                use. Gaining practical experience through workshops, collaborative projects, and mentorship from Google
+                professionals.
+              </p>
+            </li>
+             
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SCHOOL OF ENGINEERING & TECHNOLOGY DR.D.Y PATIL UNIVERSITY PUNE<br>BACHELOR OF
+                TECHNOLOGY</h4>
+
+              <span>AUGUST 2024 TO Present</span>
+
+              <p class="timeline-text">
+                (with average of 8.27 CGPA and 1st class with distinction)
+
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SAMARTH JUNIOR COLLAGE, JAFRABAD<br>HSC</h4>
+
+              <span>JUNE 2024</span>
+
+              <p class="timeline-text">
+                (with 68.17% and 1st class and distinction)
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">DNYANSAGAR VIDHYALAYA, SIPORA(AM)<br>SSC</h4>
+
+              <span>MARCH 2022</span>
+
+              <p class="timeline-text">
+                (with 91.00% and 1st class and distinction)
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web Devloper<br>YUVA Intern NSDC.</h4>
+
+              <span>Sep 2025- Present </span>
+
+              <p class="timeline-text">
+                <strong>i) ML-Driven FinOps & Cost Prediction:</strong> Spearheading machine learning initiatives for
+                cloud financial management. Develop and deploy predictive models using frameworks like Darts,
+                NeuralProphet, and CatBoost to accurately forecast cloud expenditure and optimize infrastructure
+                costs<br>
+                <strong>ii) AI-Powered Infrastructure Automation (Auto-Terraform):</strong> Pioneering the integration
+                of AI into DevOps by creating "Auto-Terraform" solutions. Develop intelligent systems that automate the
+                generation, validation, and management of Infrastructure as Code (IaC), significantly reducing manual
+                effort and accelerating environment provisioning.<br>
+                <strong>iii) End-to-End AI/ML Project Lifecycle Management:</strong> Overseeing the complete lifecycle
+                of internal AI solutions, from initial model development and prototyping to rigorous testing and
+                automated deployment. Built and maintain robust CI/CD pipelines specifically designed for machine
+                learning applications.<br>
+                <strong>iv) Enterprise RAG & Generative AI Solutions:</strong> Architecting and deploying highly
+                scalable, internal generative AI applications using advanced Retrieval-Augmented Generation (RAG)
+                frameworks. This involves integrating Claude 3.5 Sonnet via Amazon Bedrock and engineering sophisticated
+                vector embedding pipelines to transform vast internal knowledge bases into queryable, intelligent
+                systems for critical business functions.<br>
+                <strong>v) AI/ML Research & Development for DevOps:</strong> Driving innovation as a key member of the
+                R&D team by prototyping and developing next-generation DevOps solutions. This involves creating "smart"
+                AI/ML-powered tools to automate complex tasks, enhance system observability, and introduce intelligent,
+                self-healing capabilities into the infrastructure.<br>
+                <strong>vi) Continuous Learning & Innovation:</strong> Keeping up with DevOps trends, cloud computing
+                advancements, and AI-driven automation solutions.<br>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Site Reliability Engineer + Software Engineer<br>STARMAKER INTERACTIVE
+                PVT LTD,PUNE</h4>
+
+              <span>JAN 2024- Feb 2025 </span>
+
+              <p class="timeline-text">
+                <strong>i) Database Management:</strong> Skilled in designing and optimizing SQL and NoSQL
+                databases.<br>
+                <strong>ii) CI/CD Automation:</strong> Implementing and optimizing CI/CD pipelines to automate build,
+                test, and deployment processes.<br>
+                <strong>iii) Quality Assurance:</strong> Certifying builds through rigorous quality checks before
+                production deployment.<br>
+                <strong>iv) Collaborative Development:</strong> Working closely with development teams to design,
+                develop, and deploy software solutions.<br>
+                <strong>v) PHP Development:</strong> Experienced in developing and maintaining PHP applications,
+                leveraging frameworks like Codeigniter.<br>
+                <strong>vi) Security and Performance:</strong> Ensuring code quality, performance optimization, and
+                adherence to security standards.<br>
+                <strong>vii) AWS Cloud Services:</strong> Utilizing AWS services (e.g., EC2, S3, Lambda) to build
+                scalable and reliable cloud infrastructure.<br>
+                <strong>viii) Problem Solving:</strong> Identifying and resolving issues proactively to enhance system
+                reliability and operational efficiency.<br>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Microsoft Future Ready Talent Intern<br>Microsoft Corporation </h4>
+
+              <span>SEP 2023 – DEC 2023 </span>
+
+              <p class="timeline-text">
+                <strong>i) Azure CI/CD Deployment:</strong> Deployed a website using Azure CI/CD pipelines,
+                demonstrating
+                proficiency in Azure DevOps practices.<br>
+                <strong>ii) Chatbot Creation:</strong> Developed a chatbot using Azure Bot, enhancing response speed by
+                15% for student inquiries.<br>
+                <strong>iii) Azure Expertise:</strong> Earned 51 Azure Cloud badges, showcasing comprehensive knowledge
+                of
+                Azure services.<br>
+                <strong>iv) Independent Project Completion:</strong> Successfully completed the project independently,
+                highlighting adaptability and self-learning skills in Azure DevOps.<br>
+              </p>
+
+            </li>
+
+            
+
+            <section class="skill">
+
+              <h3 class="h3 skills-title">My skills</h3>
+
+              <ul class="skills-list content-card">
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <h5 class="h5">Problem Solving</h5>
+                    <data value="50">101%</data>
+                  </div>
+
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 101%;"></div>
+
+
+                  </div>
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <h5 class="h5">Linux</h5>
+                    <data value="80">85%</data>
+                  </div>
+
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 85%;"></div>
+                  </div>
+
+                </li>
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <h5 class="h5">Git And GitHub</h5>
+                    <data value="70">100%</data>
+                  </div>
+
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 100%;"></div>
+                  </div>
+
+                </li>
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <h5 class="h5">Docker</h5>
+                    <data value="90">90%</data>
+                  </div>
+
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 90%;"></div>
+                  </div>
+
+                </li>
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <h5 class="h5">Python</h5>
+                    <data value="50">50%</data>
+                  </div>
+
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 50%;"></div>
+
+
+                  </div>
+                </li>
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <h5 class="h5">Jenkins/CodeBuild</h5>
+                    <data value="50">85%</data>
+                  </div>
+
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 85%;"></div>
+
+
+                  </div>
+
+                </li>
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <h5 class="h5">Amazon Web Services</h5>
+                    <data value="50">90%</data>
+                  </div>
+
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 90%;"></div>
+
+
+                  </div>
+
+                </li>
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <h5 class="h5">Kubernetes/Ecs(Fargate+EC2)</h5>
+                    <data value="50">83%</data>
+                  </div>
+
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 83%;"></div>
+
+
+                  </div>
+
+                </li>
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <h5 class="h5">ansible</h5>
+                    <data value="50">85%</data>
+                  </div>
+
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 85%;"></div>
+
+
+                  </div>
+
+                </li>
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <h5 class="h5">Terraform</h5>
+                    <data value="50">81%</data>
+                  </div>
+
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 81%;"></div>
+
+
+                  </div>
+
+                </li>
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <h5 class="h5">AWS CICD</h5>
+                    <data value="50">100%</data>
+                  </div>
+
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 100%;"></div>
+
+
+                  </div>
+
+                </li>
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <h5 class="h5">Mongo Database</h5>
+                    <data value="50">50%</data>
+                  </div>
+
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 50%;"></div>
+
+
+                  </div>
+
+                </li>
+
+                <li class="skills-item">
+
+                  <div class="title-wrapper">
+                    <h5 class="h5">My SQL</h5>
+                    <data value="50">50%</data>
+                  </div>
+
+                  <div class="skill-progress-bg">
+                    <div class="skill-progress-fill" style="width: 50%;"></div>
+
+
+                  </div>
+
+                  
+
+
+
+                </li>
+
+              </ul>
+
+            </section>
+
+      </article>
+
+
+
+
+
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Key Highlights</button>
+            </li>
+
+            
+
+            
+          </ul>
+            <div class="filter-select-box">
+            <div aria-disabled="true"
+              style="margin-bottom:8px;padding:8px 12px;border-radius:10px;background:#2b1f00;border:1px dashed #ffdd9b;color:#ffdd9b;font-weight:600;letter-spacing:.2px;">
+              Prefer start with Devops first and then mlops
+            </div>
+            <button class="filter-select" data-select>
+              <div class="select-value" data-select-value>Prefer start with Devops first and then mlops</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item" aria-disabled="true" style="pointer-events:none;margin-bottom:6px;">
+                <div
+                  style="padding:10px 12px;border-radius:10px;background:#2b1f00;border:1px dashed #ffdd9b;color:#ffdd9b;font-weight:600;letter-spacing:.2px;">
+                  Prefer start with Devops first and then mlops
+                </div>
+              </li>
+              <li class="select-item" aria-disabled="true" style="pointer-events:none;opacity:.95;">
+                <div
+                  style="padding:8px 12px;border-radius:10px;color:#ffdd9b;background:rgba(255,255,255,0.02);font-weight:600;">
+                </div>
+                <div style="padding:4px 12px 10px;color:#cfcfcf;">Choose your track</div>
+              </li>
+              <li class="select-item">
+                <button data-select-item data-value="Current Organization">Current Organization</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item data-value="DevOps">
+                  <span style="display:flex;align-items:center;gap:10px;">
+                    <img src="assets/images/icon-dev.svg" alt="DevOps icon" width="20" height="20"
+                      style="filter:saturate(1.1);background:#fff;border-radius:6px;padding:2px" />
+                    <span>
+                      <strong>DevOps</strong>
+                      <div style="font-size:12px;color:#bdbdbd;">CI/CD, Cloud, Infra as Code</div>
+                    </span>
+                  </span>
+                </button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item data-value="MLOps">
+                  <span style="display:flex;align-items:center;gap:10px;">
+                    <img src="assets/mlops/brain.svg" alt="MLOps icon" width="20" height="20"
+                      style="background:#fff;border-radius:6px;padding:2px" />
+                    <span>
+                      <strong>MLOps (AI/ML)</strong>
+                      <div style="font-size:12px;color:#bdbdbd;">Model lifecycle, Serving, Ops</div>
+                    </span>
+                  </span>
+                </button>
+              </li>
+
+
+              <li class="select-item">
+                <button data-select-item>Projects</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>QA</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+            
+            <li class="project-item active" data-filter-item data-category="Projects">
+              <a href="#" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets\images\2021.png" alt="Mandi" loading="lazy">
+                </figure>
+                <h3 class="project-title">Mandi - Agricultural Marketplace Platform</h3>
+                <p class="project-category">A comprehensive digital marketplace connecting farmers directly with buyers, eliminating middlemen. Built with modern cloud infrastructure, featuring real-time price tracking, inventory management, and secure payment integration. Deployed on AWS with full CI/CD automation, Kubernetes orchestration, and monitoring using Grafana and Prometheus.</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Projects">
+              <a href="#" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="assets\images\Devops.png" alt="Bharat Setu" loading="lazy">
+                </figure>
+                <h3 class="project-title">Bharat Setu - Digital Bridge Initiative</h3>
+                <p class="project-category">A government-focused digital platform designed to bridge the gap between citizens and public services. Implements secure authentication, multilingual support, and accessibility features. Built with scalable microservices architecture on cloud infrastructure, featuring automated deployment pipelines, load balancing, and comprehensive monitoring solutions.</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Projects">
+              <a href="#" style="pointer-events: none; opacity: 0.7;">
+                <figure class="project-img" style="position: relative;">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="time-outline"></ion-icon>
+                  </div>
+                  <img src="assets\images\goldmedal.png" alt="Coming Soon" loading="lazy" style="filter: blur(2px);">
+                  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.8); padding: 20px; border-radius: 10px; text-align: center;">
+                    <ion-icon name="lock-closed-outline" style="font-size: 48px; color: #ffdb70;"></ion-icon>
+                  </div>
+                </figure>
+                <h3 class="project-title">🔒 Project Name - Confidential</h3>
+                <p class="project-category">An exciting new project currently under development. Details will be revealed soon. Stay tuned for the official announcement!<br><br><strong>Launch Date: March 23, 2026</strong></p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Projects">
+              <a href="#" style="pointer-events: none; opacity: 0.7;">
+                <figure class="project-img" style="position: relative;">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="time-outline"></ion-icon>
+                  </div>
+                  <img src="assets\images\mlops.png" alt="Coming Soon" loading="lazy" style="filter: blur(2px);">
+                  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.8); padding: 20px; border-radius: 10px; text-align: center;">
+                    <ion-icon name="lock-closed-outline" style="font-size: 48px; color: #ffdb70;"></ion-icon>
+                  </div>
+                </figure>
+                <h3 class="project-title">🔒 Project Name - Confidential</h3>
+                <p class="project-category">A groundbreaking initiative in the works. More information will be shared as we approach the launch date. Get ready for something innovative!<br><br><strong>Launch Date: April 15, 2026</strong></p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Projects">
+              <a href="#" style="pointer-events: none; opacity: 0.7;">
+                <figure class="project-img" style="position: relative;">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="time-outline"></ion-icon>
+                  </div>
+                  <img src="assets\images\Rag.png" alt="Coming Soon" loading="lazy" style="filter: blur(2px);">
+                  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.8); padding: 20px; border-radius: 10px; text-align: center;">
+                    <ion-icon name="lock-closed-outline" style="font-size: 48px; color: #ffdb70;"></ion-icon>
+                  </div>
+                </figure>
+                <h3 class="project-title">🔒 Project Name - Confidential</h3>
+                <p class="project-category">A major project currently in development. The details are under wraps for now, but we promise it will be worth the wait!<br><br><strong>Launch Date: June 10, 2026</strong></p>
+              </a>
+            </li>
+
+            
+
+          </ul>
+        </section>
+      </article>
+
+      
+
+      
+
+      <article class="spotlight" data-page="spotlight">
+        <header>
+          <h2 class="h2 article-title">Spotlight</h2>
+          <p class="spotlight-subtitle">A showcase of my most notable moments — from keynote talks and meetup
+            appearances to awards and recognitions. These are the milestones that shaped my journey.</p>
+        </header>
+
+        <section class="spotlight-section">
+          
+          <ul class="filter-list spotlight-filter-list">
+            <li class="filter-item">
+              <button class="active" data-spotlight-filter-btn data-category="blog">
+                <ion-icon name="newspaper-outline"></ion-icon>
+                <span>Blog</span>
+              </button>
+            </li>
+            <li class="filter-item">
+              <button data-spotlight-filter-btn data-category="highlight">
+                <ion-icon name="star-outline"></ion-icon>
+                <span>Highlights</span>
+              </button>
+            </li>
+            <li class="filter-item">
+              <button data-spotlight-filter-btn data-category="all">
+                <ion-icon name="apps-outline"></ion-icon>
+                <span>All</span>
+              </button>
+            </li>
+          </ul>
+
+          
+          <div class="spotlight-search-container">
+            <div class="spotlight-search-wrapper">
+              <ion-icon name="sparkles-outline" class="search-ai-icon"></ion-icon>
+              <input type="text" id="spotlightSearchInput" class="spotlight-search-input"
+                placeholder="Search with AI..." autocomplete="off">
+              <button class="search-clear-btn" id="searchClearBtn" style="display: none;">
+                <ion-icon name="close-circle"></ion-icon>
+              </button>
+            </div>
+            <div class="search-results-info" id="searchResultsInfo" style="display: none;">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+              <span id="searchResultsText"></span>
+            </div>
+          </div>
+
+          <ul class="spotlight-list" id="spotlightList">
+
+            <noscript>
+              <li class="spotlight-item">
+                <div class="spotlight-card">
+                  <figure class="spotlight-img">
+                    <div class="spotlight-item-icon-box">
+                      <ion-icon name="trophy-outline"></ion-icon>
+                    </div>
+                    <img src="assets/images/goldmedal.png" alt="Gold Medal" loading="lazy">
+                  </figure>
+                  <div class="spotlight-content">
+                    <h3 class="spotlight-title">Gold Medalist - DPU 2024</h3>
+                    <time class="spotlight-date">May 2024</time>
+                    <p class="spotlight-description">Awarded Gold Medal for academic excellence in Bachelor of Computer
+                      Application with 7.80 CGPA and first class with distinction.</p>
+                  </div>
+                </div>
+              </li>
+            </noscript>
+
+          </ul>
+
+          <div class="spotlight-cta">
+            <a href="#" class="cta-link">
+              <span>View All Highlights</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+          </div>
+
+        </section>
+
+      </article>
+
+
+      
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.303634024634!2d72.8776553759606!3d19.07609068704261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c63c5a1e8e7b%3A0x9c5b8c3f4e8e4e0!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1697051234567!5m2!1sen!2sus"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://wa.me/9022447409" class="form" target="_blank">
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      
+      <div id="studentsModal" class="spotlight-modal">
+        <div class="spotlight-modal-content choice-modal">
+          <button class="spotlight-modal-close" id="closeStudentsModal" aria-label="Close">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <div class="choice-inner">
+            <div class="choice-header">
+              <h2 class="h2">For Learners</h2>
+              <p class="subtitle">Choose your track</p>
+            </div>
+            <div class="choice-grid">
+              <a id="chooseDevOps" class="choice-card devops" href="Devops_roadmap2025.html"
+                aria-label="Explore DevOps roadmap">
+                <span class="choice-icon">
+                  <img src="assets/images/icon-dev.svg" alt="DevOps icon" width="32" height="32" />
+                </span>
+                <span class="choice-title">DevOps</span>
+                <span class="choice-desc">CI/CD, Cloud, Infra as Code</span>
+              </a>
+              <a id="chooseMLOps" class="choice-card mlops" href="Mlops_roadmap2025.html"
+                aria-label="Explore MLOps roadmap">
+                <span class="choice-icon">
+                  <img src="assets/images/icon-app.svg" alt="MLOps icon" width="32" height="32" />
+                </span>
+                <span class="choice-title">MLOps</span>
+                <span class="choice-desc">Model lifecycle, Serving, Ops</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          const studentsLink = document.getElementById('studentsLink');
+          const modal = document.getElementById('studentsModal');
+          const closeBtn = document.getElementById('closeStudentsModal');
+          const content = modal ? modal.querySelector('.spotlight-modal-content') : null;
+          if (studentsLink && modal && closeBtn) {
+            const open = (e) => {
+              if (e) e.preventDefault();
+              modal.classList.add('active');
+              document.body.style.overflow = 'hidden';
+            };
+            const close = () => {
+              modal.classList.remove('active');
+              document.body.style.overflow = '';
+            };
+            studentsLink.addEventListener('click', open);
+            closeBtn.addEventListener('click', close);
+            modal.addEventListener('click', (e) => { if (e.target === modal) close(); });
+            if (content) content.addEventListener('click', (e) => e.stopPropagation());
+            document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.classList.contains('active')) close(); });
+          }
+        })();
+      </script>
+
+      
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

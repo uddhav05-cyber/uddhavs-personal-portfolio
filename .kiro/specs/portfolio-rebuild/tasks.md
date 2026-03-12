@@ -130,6 +130,31 @@ This implementation plan breaks down the portfolio rebuild into sequential, mana
     - Test keyboard shortcut handling
     - _Requirements: 7.1, 7.2, 7.3, 7.5_
 
+  - [x] 2.13 Implement Glitch Effects module
+    - Create src/modules/glitch-effects.js
+    - Implement applyGlitch() for random glitch animations
+    - Implement setIntensity() for configurable glitch strength
+    - Implement random character replacement logic
+    - Add RGB color shift with text-shadow manipulation
+    - Use requestAnimationFrame for smooth 60fps effects
+    - Respect prefers-reduced-motion preference
+    - _Requirements: 1.1, 1.2, 1.5_
+
+  - [x] 2.14 Implement Typing Animation module
+    - Create src/modules/typing-animation.js
+    - Implement typeText() with character-by-character animation
+    - Add variable typing speed with random delays for realism
+    - Implement blinking cursor effect
+    - Add callback support for animation completion
+    - Support multiple typing sequences with delays
+    - _Requirements: 1.1, 1.3_
+
+  - [ ]* 2.15 Write unit tests for cyberpunk modules
+    - Test glitch effect application and intensity control
+    - Test typing animation timing and completion
+    - Test reduced motion preference handling
+    - _Requirements: 1.1, 1.2, 1.5_
+
 - [x] 3. Checkpoint - Core modules complete
   - Ensure all core modules are implemented and tests pass
   - Verify module interfaces match design specifications
@@ -174,139 +199,231 @@ This implementation plan breaks down the portfolio rebuild into sequential, mana
     - Implement click handlers to open profiles in new tabs
     - _Requirements: 12.1, 12.2, 12.3_
 
-  - [ ]* 4.6 Write unit tests for UI components
+  - [x] 4.6 Implement Glitch Text component
+    - Create src/components/glitch-text.js
+    - Implement glitch effect with random character replacement
+    - Add RGB color shift effects with text-shadow
+    - Add horizontal displacement animation
+    - Implement configurable intensity and frequency
+    - Use requestAnimationFrame for performance optimization
+    - Respect prefers-reduced-motion preference
+    - _Requirements: 1.1, 1.2, 1.5_
+
+  - [x] 4.7 Implement Terminal Window component
+    - Create src/components/terminal-window.js
+    - Render terminal header with colored dots (red, yellow, green)
+    - Implement typing animation effect for text content
+    - Add command prompt styling with $ prefix
+    - Implement blinking cursor animation
+    - Add clear() method for terminal content reset
+    - _Requirements: 1.1, 1.3, 18.2_
+
+  - [ ]* 4.8 Write unit tests for UI components
     - Test component rendering with mock data
     - Test event handlers and user interactions
     - Test responsive behavior at different viewport sizes
+    - Test glitch and typing animations
     - _Requirements: 10.1, 10.2, 10.3, 18.2_
 
-- [ ] 5. Styling system implementation
-  - [x] 5.1 Create base styles
-    - Create src/styles/base.css
-    - Implement CSS reset and normalize
-    - Define CSS custom properties for colors, spacing, typography
-    - Set up base typography and font loading
+- [ ] 5. Cyberpunk/Terminal styling system implementation
+  - [ ] 5.1 Create cyberpunk theme foundation
+    - Create src/styles/theme.css with CSS custom properties
+    - Define cyberpunk color palette (dark backgrounds, neon green accents, cyan/purple/pink secondaries)
+    - Define typography variables (JetBrains Mono, Syne fonts)
+    - Define glow effect variables and intensities
+    - Define grid and spacing variables
     - _Requirements: 17.1, 17.2_
 
-  - [x] 5.2 Create animation styles
+  - [ ] 5.2 Implement CRT and visual effects
+    - Create src/styles/effects.css
+    - Implement CRT scanlines overlay with repeating gradient
+    - Implement vignette effect with radial gradient
+    - Implement grid background pattern with pseudo-elements
+    - Add screen flicker animation (optional, respects reduced motion)
+    - _Requirements: 1.1, 1.2, 1.5_
+
+  - [ ] 5.3 Create terminal-style elements
+    - Create src/styles/terminal.css
+    - Style terminal window containers with borders and shadows
+    - Style terminal prompts with $ prefix
+    - Style terminal dots (red, yellow, green indicators)
+    - Implement blinking cursor animation
+    - Style command-line interface elements
+    - _Requirements: 1.1, 1.3, 17.2_
+
+  - [ ] 5.4 Implement glitch and glow animations
     - Create src/styles/animations.css
-    - Define keyframe animations (fadeIn, slideUp, slideDown, scaleIn)
-    - Define scroll-based animation classes
-    - Define hover and interaction feedback animations
-    - Implement prefers-reduced-motion media query overrides
+    - Define glitch keyframe animation with text-shadow and transform
+    - Define glow-on-hover effects with box-shadow transitions
+    - Define typing animation with width and caret blink
+    - Define status indicator blink animation
+    - Define scan line sweep animation for cards
+    - Implement prefers-reduced-motion overrides for all animations
     - _Requirements: 1.1, 1.2, 1.3, 1.4, 1.5_
 
-  - [x] 5.3 Create layout styles
+  - [ ] 5.5 Create two-column layout system
     - Create src/styles/layout.css
-    - Implement grid system for responsive layouts
-    - Define section layouts (header, main, footer)
-    - Implement flexbox utilities for component layouts
+    - Implement CSS Grid two-column layout (sticky sidebar + scrollable content)
+    - Define sidebar styles (350px width, sticky positioning, border)
+    - Define main content area styles (max-width, padding, overflow)
+    - Implement responsive breakpoint for single-column mobile layout (<1024px)
+    - Add smooth scroll behavior with reduced motion support
     - _Requirements: 10.1, 10.2, 10.3_
 
-  - [x] 5.4 Create component styles
+  - [ ] 5.6 Style cyberpunk UI components
     - Create src/styles/components.css
-    - Style header, navigation, project cards, search interface
-    - Style social links, contact information, technology showcase
-    - Ensure consistent spacing and visual hierarchy
+    - Style project cards with hover lift, glow, and scan animation
+    - Style buttons with terminal aesthetic (transparent bg, border, glow on hover)
+    - Style form inputs with terminal styling and focus glow
+    - Style badges with rotating border gradient animation
+    - Style links with underline and color shift on hover
+    - Ensure crosshair cursor globally, pointer for interactive elements
     - _Requirements: 17.2, 18.3_
 
-  - [x] 5.5 Create responsive styles
+  - [ ] 5.7 Create responsive cyberpunk styles
     - Create src/styles/responsive.css
-    - Define mobile breakpoints (max-width: 768px)
-    - Define tablet breakpoints (768px - 1024px)
-    - Define desktop breakpoints (min-width: 1024px)
-    - Adjust animation complexity for mobile devices
+    - Define mobile breakpoints (max-width: 768px) with simplified effects
+    - Define tablet breakpoints (768px - 1023px)
+    - Define laptop breakpoints (1024px - 1199px)
+    - Define desktop breakpoints (1200px+)
+    - Reduce glow intensity and animation complexity on mobile
+    - Adjust touch targets to minimum 44x44px
     - _Requirements: 10.1, 10.2, 10.3, 10.4, 10.5_
 
+  - [ ] 5.8 Integrate custom fonts
+    - Download and add JetBrains Mono font files to src/assets/fonts/JetBrainsMono/
+    - Download and add Syne font files to src/assets/fonts/Syne/
+    - Create @font-face declarations in theme.css
+    - Define font-display: swap for performance
+    - Set up fallback font stacks (Consolas, Monaco, Courier New for mono)
+    - _Requirements: 17.1, 17.2_
+
 - [ ] 6. Main application integration
-  - [x] 6.1 Create main entry point
+  - [ ] 6.1 Create main entry point with cyberpunk initialization
     - Create src/main.js
     - Initialize all modules (Firebase, Content Manager, Router, Animation Engine)
+    - Initialize cyberpunk effects (Glitch Effects, Typing Animation)
+    - Set up CRT scanlines and vignette overlays
     - Set up global event listeners
     - Implement application lifecycle (init, load, ready)
-    - _Requirements: 2.1, 2.2_
+    - Apply crosshair cursor globally
+    - _Requirements: 2.1, 2.2, 1.1_
 
-  - [x] 6.2 Create HTML structure
+  - [ ] 6.2 Create HTML structure with cyberpunk layout
     - Create public/index.html
-    - Define semantic HTML5 structure
+    - Define semantic HTML5 structure with two-column grid
+    - Add sticky sidebar section with personal info and navigation
+    - Add scrollable main content section
+    - Add CRT scanlines overlay div
+    - Add grid background pattern
     - Add meta tags for SEO and social sharing (Open Graph)
     - Add ARIA landmarks for accessibility
-    - Link stylesheets and scripts
-    - _Requirements: 17.1, 18.1, 12.4, 12.5_
+    - Link cyberpunk stylesheets (theme.css, effects.css, terminal.css, animations.css)
+    - Link custom fonts (JetBrains Mono, Syne)
+    - _Requirements: 17.1, 18.1, 12.4, 12.5, 10.1_
 
-  - [x] 6.3 Implement section rendering
+  - [ ] 6.3 Implement hero section with glitch effects
+    - Render hero name with Glitch Text component
+    - Add terminal-style role/title with typing animation
+    - Add blinking status indicator (online/available)
+    - Integrate Animation Engine for entrance animations
+    - Add glow effects on hero elements
+    - _Requirements: 1.1, 1.2, 1.3, 1.4_
+
+  - [ ] 6.4 Implement section rendering with cyberpunk styling
     - Create rendering logic for home, projects, about, contact sections
+    - Apply terminal-style section headers with command prompt prefix
     - Integrate Content Manager for data population
-    - Integrate Animation Engine for section transitions
+    - Integrate Animation Engine for section transitions and scroll animations
     - Integrate Router for section navigation
-    - _Requirements: 1.4, 8.1, 8.2, 3.2_
+    - Add glow effects on section transitions
+    - _Requirements: 1.4, 8.1, 8.2, 3.2, 1.2_
 
-  - [x] 6.4 Implement project filtering and display
-    - Add filter controls for project categories and technologies
+  - [ ] 6.5 Implement project filtering and display with card effects
+    - Add filter controls styled as terminal buttons
     - Implement filter logic using Content Manager
+    - Style project cards with hover lift, glow, and scan animation
     - Update URL with filter parameters using Router
-    - Animate filtered results with Animation Engine
-    - _Requirements: 16.3, 8.5, 1.2_
+    - Animate filtered results with Animation Engine (staggered fade-in)
+    - _Requirements: 16.3, 8.5, 1.2, 1.3_
 
-  - [x] 6.5 Implement contact and personal information display
-    - Render email with mailto link
+  - [ ] 6.6 Implement contact and personal information display
+    - Render email with mailto link and glow on hover
     - Render phone with tel link
-    - Render location and birthday information
-    - Add contact button with navigation to contact section
+    - Render location and birthday information in terminal style
+    - Add contact button with terminal styling and glow effect
+    - Display social links with icon glow on hover
     - _Requirements: 13.1, 13.2, 13.3, 13.4, 13.5_
 
-  - [x] 6.6 Implement technology showcase display
-    - Render technology categories with icons
+  - [ ] 6.7 Implement technology showcase with badge styling
+    - Render technology categories with terminal-style headers
     - Organize technologies into groups (Cloud, DevOps, Languages, Frameworks, Databases)
-    - Display technology logos with consistent sizing
-    - Add descriptions for each technology
+    - Display technology badges with rotating border gradient animation
+    - Add technology logos with glow effect on hover
+    - Add descriptions in monospace font
     - _Requirements: 15.1, 15.2, 15.3, 15.4, 15.5_
 
-  - [x] 6.7 Implement resume/CV access
-    - Add CV navigation link in header
-    - Implement click handler to open PDF in new tab
+  - [ ] 6.8 Implement resume/CV access with terminal styling
+    - Add CV navigation link in sidebar with terminal button style
+    - Implement click handler to open PDF in new tab with glow feedback
     - Upload resume PDF to Firebase Storage
     - Configure Content Manager to load resume URL from config
     - _Requirements: 14.1, 14.2, 14.3, 14.4, 14.5_
 
-  - [x] 6.8 Implement error handling and resilience
+  - [ ] 6.9 Implement error handling and resilience
     - Add try-catch blocks for Firebase operations
     - Implement retry logic for failed Firebase operations
     - Display cached content when Firebase connection fails
     - Show placeholder images for failed image loads
-    - Display user-friendly error messages
-    - Add connection status indicator
+    - Display user-friendly error messages in terminal style
+    - Add connection status indicator with blinking dot
     - _Requirements: 20.1, 20.2, 20.3, 20.4, 20.5_
 
-- [x] 7. Checkpoint - Application integration complete
-  - Ensure all sections render correctly with real data
-  - Verify navigation and routing work across all sections
+- [ ] 7. Checkpoint - Cyberpunk theme and application integration complete
+  - Ensure all sections render correctly with cyberpunk styling
+  - Verify glitch effects, typing animations, and glow effects work properly
+  - Test CRT scanlines and vignette overlays
+  - Verify two-column layout and responsive behavior
+  - Check navigation and routing work across all sections
   - Test error handling with simulated failures
   - Ask the user if questions arise
 
 - [ ] 8. Accessibility and compliance
-  - [x] 8.1 Add ARIA labels and semantic HTML
+  - [ ] 8.1 Add ARIA labels and semantic HTML
     - Add ARIA labels to all interactive elements
     - Use semantic HTML5 elements (nav, main, section, article)
     - Add role attributes where needed
     - Add aria-live regions for dynamic content updates
+    - Ensure terminal-style elements have proper ARIA descriptions
     - _Requirements: 18.1, 17.1_
 
-  - [x] 8.2 Implement keyboard navigation
+  - [ ] 8.2 Implement keyboard navigation
     - Ensure all interactive elements are keyboard accessible
     - Implement focus management for modals and overlays
-    - Add visible focus indicators
+    - Add visible focus indicators with high-contrast glow
     - Test tab order for logical navigation flow
+    - Add keyboard shortcuts for main sections (Cmd/Ctrl + number keys)
     - _Requirements: 18.2_
 
-  - [x] 8.3 Ensure color contrast and visual accessibility
-    - Verify color contrast ratios meet WCAG AA standards (4.5:1 for text)
+  - [ ] 8.3 Ensure color contrast and visual accessibility
+    - Verify color contrast ratios meet WCAG AAA standards (7:1 for text)
+    - Ensure neon green on dark background meets contrast requirements
     - Add alternative text for all images
     - Ensure icons have text alternatives or ARIA labels
     - Test with screen reader (NVDA, JAWS, or VoiceOver)
+    - Verify glitch effects don't interfere with readability
     - _Requirements: 18.3, 18.4, 18.5_
 
-  - [ ]* 8.4 Run accessibility audit
+  - [ ] 8.4 Implement reduced motion support
+    - Disable glitch animations when prefers-reduced-motion is set
+    - Remove CRT scanlines for reduced motion users
+    - Simplify all transitions to instant or very brief
+    - Remove typing animations and show text immediately
+    - Keep static cursor instead of blinking
+    - Test with prefers-reduced-motion: reduce enabled
+    - _Requirements: 1.5, 18.1, 18.2_
+
+  - [ ]* 8.5 Run accessibility audit
     - Run Lighthouse accessibility audit
     - Run axe DevTools accessibility scan
     - Fix any identified accessibility issues
@@ -314,30 +431,44 @@ This implementation plan breaks down the portfolio rebuild into sequential, mana
     - _Requirements: 18.1, 18.2, 18.3, 18.4, 18.5_
 
 - [ ] 9. Performance optimization
-  - [x] 9.1 Implement lazy loading for images
+  - [ ] 9.1 Implement lazy loading for images
     - Add loading="lazy" attribute to below-the-fold images
     - Implement Intersection Observer for progressive image loading
     - Add placeholder images or blur-up technique
+    - Optimize project card images for fast loading
     - _Requirements: 11.3_
 
-  - [x] 9.2 Configure build optimization
+  - [ ] 9.2 Configure build optimization
     - Enable CSS minification in webpack/vite config
     - Enable JavaScript minification and tree-shaking
     - Configure code splitting for vendor bundles
     - Enable gzip/brotli compression
+    - Optimize custom font loading with font-display: swap
     - _Requirements: 11.4_
 
-  - [x] 9.3 Optimize asset delivery
+  - [ ] 9.3 Optimize asset delivery and fonts
     - Compress images to WebP format with fallbacks
     - Implement responsive images with srcset
-    - Preload critical fonts and CSS
+    - Preload critical fonts (JetBrains Mono, Syne)
+    - Preload critical CSS (theme.css, effects.css)
     - Add resource hints (preconnect, dns-prefetch) for Firebase
+    - Subset custom fonts to include only used characters
     - _Requirements: 11.1, 11.2_
 
-  - [ ]* 9.4 Run performance audit
+  - [ ] 9.4 Optimize cyberpunk effects for performance
+    - Use CSS transforms and opacity for animations (GPU acceleration)
+    - Throttle glitch effect frequency to reduce CPU usage
+    - Use will-change property sparingly for animated elements
+    - Reduce glow effect complexity on mobile devices
+    - Disable scanlines on low-end devices
+    - Use requestAnimationFrame for all JavaScript animations
+    - _Requirements: 1.1, 1.2, 11.5_
+
+  - [ ]* 9.5 Run performance audit
     - Run Lighthouse performance audit
     - Measure First Contentful Paint (target: <1.5s)
     - Measure Time to Interactive (target: <3s)
+    - Measure animation frame rate (target: 60fps)
     - Optimize until Lighthouse score reaches 90+
     - _Requirements: 11.1, 11.2, 11.5_
 
@@ -386,35 +517,42 @@ This implementation plan breaks down the portfolio rebuild into sequential, mana
     - _Requirements: 2.4, 9.5_
 
 - [ ] 12. Final integration and validation
-  - [x] 12.1 Create sitemap and robots.txt
+  - [ ] 12.1 Create sitemap and robots.txt
     - Create public/sitemap.xml with all portfolio URLs
     - Create public/robots.txt for search engine crawlers
     - _Requirements: 12.4, 12.5_
 
-  - [x] 12.2 Validate HTML, CSS, and JavaScript
+  - [ ] 12.2 Validate HTML, CSS, and JavaScript
     - Run HTML validator on generated markup
-    - Run CSS validator on stylesheets
+    - Run CSS validator on stylesheets (theme.css, effects.css, terminal.css, animations.css)
     - Run ESLint on JavaScript code
     - Fix any validation errors
     - _Requirements: 17.1, 17.2, 17.3, 17.4, 17.5_
 
   - [ ] 12.3 End-to-end integration testing
     - Test complete user flows (landing → projects → project detail → contact)
+    - Test cyberpunk effects (glitch, typing, glow, scanlines) across all sections
+    - Test two-column layout and responsive breakpoints
     - Test search functionality across all content
     - Test social media links and external navigation
     - Test resume download functionality
     - Test visitor tracking and analytics recording
-    - _Requirements: 6.1, 6.2, 7.1, 7.2, 12.1, 12.2, 14.1, 14.2_
+    - Test reduced motion preferences
+    - _Requirements: 6.1, 6.2, 7.1, 7.2, 12.1, 12.2, 14.1, 14.2, 1.5_
 
   - [ ] 12.4 Deploy to production
     - Run final build with production configuration
     - Deploy to Firebase Hosting
     - Verify deployment at https://uddhavbhople.in
+    - Verify cyberpunk theme renders correctly in production
     - Monitor Firebase Analytics for visitor data
     - _Requirements: 9.1, 9.4, 9.5, 5.5_
 
 - [ ] 13. Final checkpoint - Production validation
   - Verify all features work in production environment
+  - Check cyberpunk effects render correctly across browsers
+  - Verify CRT scanlines, glitch effects, and glow animations work
+  - Test two-column layout on various screen sizes
   - Check Firebase connections and data recording
   - Validate performance metrics meet requirements
   - Ensure all tests pass, ask the user if questions arise
@@ -426,4 +564,11 @@ This implementation plan breaks down the portfolio rebuild into sequential, mana
 - Checkpoints ensure incremental validation and provide opportunities for user feedback
 - The implementation follows a bottom-up approach: infrastructure → modules → components → integration
 - All Firebase functionality is preserved and tested throughout implementation
+- Cyberpunk/terminal aesthetic is implemented through modular CSS files (theme.css, effects.css, terminal.css, animations.css)
+- New components (Glitch Text, Terminal Window) and modules (Glitch Effects, Typing Animation) enhance the visual experience
+- Custom fonts (JetBrains Mono, Syne) are integrated for authentic terminal/cyberpunk typography
+- Two-column layout with sticky sidebar provides modern, professional structure
+- CRT effects (scanlines, vignette, grid background) create immersive cyberpunk atmosphere
+- All animations respect prefers-reduced-motion for accessibility compliance
+- Performance optimizations ensure smooth 60fps animations and fast load times
 - Accessibility and performance are validated continuously, not just at the end

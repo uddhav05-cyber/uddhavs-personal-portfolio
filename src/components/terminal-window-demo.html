@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terminal Window Component - Demo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background: #0a0a0a;
+      color: #e0e0e0;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: #00ff87;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    .demo-section {
+      margin-bottom: 3rem;
+    }
+
+    .demo-section h2 {
+      color: #00d9ff;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .demo-section p {
+      color: #a0a0a0;
+      margin-bottom: 1rem;
+    }
+
+    /* Terminal Window Styles */
+    .terminal-window {
+      background: #1a1a1a;
+      border: 1px solid #00ff87;
+      border-radius: 8px;
+      padding: 0;
+      font-family: 'Courier New', Courier, monospace;
+      box-shadow: 0 0 20px rgba(0, 255, 135, 0.2);
+      overflow: hidden;
+    }
+
+    .terminal-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1rem;
+      background: #0a0a0a;
+      border-bottom: 1px solid #00ff87;
+    }
+
+    .terminal-dots {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .terminal-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .terminal-dot-red {
+      background: #ff5f56;
+      box-shadow: 0 0 5px #ff5f56;
+    }
+
+    .terminal-dot-yellow {
+      background: #ffbd2e;
+      box-shadow: 0 0 5px #ffbd2e;
+    }
+
+    .terminal-dot-green {
+      background: #27c93f;
+      box-shadow: 0 0 5px #27c93f;
+    }
+
+    .terminal-title {
+      color: #a0a0a0;
+      font-size: 0.875rem;
+      margin-left: auto;
+    }
+
+    .terminal-content {
+      padding: 1rem;
+      min-height: 150px;
+      font-size: 0.875rem;
+    }
+
+    .terminal-prompt {
+      color: #00ff87;
+      font-weight: bold;
+      user-select: none;
+    }
+
+    .terminal-text {
+      color: #e0e0e0;
+    }
+
+    .terminal-line {
+      display: block;
+      color: #a0a0a0;
+      margin: 0.25rem 0;
+    }
+
+    .terminal-cursor {
+      display: inline-block;
+      background: #00ff87;
+      color: #0a0a0a;
+      animation: terminal-cursor-blink 1s step-end infinite;
+      margin-left: 2px;
+    }
+
+    @keyframes terminal-cursor-blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+
+    /* Grid layout for multiple terminals */
+    .terminal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .terminal-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Reduced motion support */
+    @media (prefers-reduced-motion: reduce) {
+      .terminal-cursor {
+        animation: none;
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Terminal Window Component Demo</h1>
+
+    <div class="demo-section">
+      <h2>1. Basic Terminal with Typing Animation</h2>
+      <p>A standard terminal window with header, colored dots, and typing animation.</p>
+      <div id="basic-terminal"></div>
+    </div>
+
+    <div class="demo-section">
+      <h2>2. Minimal Terminal (No Header)</h2>
+      <p>A minimal terminal without the header, useful for embedded command outputs.</p>
+      <div id="minimal-terminal"></div>
+    </div>
+
+    <div class="demo-section">
+      <h2>3. Command Sequence</h2>
+      <p>Multiple commands executed in sequence with realistic timing.</p>
+      <div id="sequence-terminal"></div>
+    </div>
+
+    <div class="demo-section">
+      <h2>4. Interactive Terminal</h2>
+      <p>Demonstrates command execution and the clear() method.</p>
+      <div id="interactive-terminal"></div>
+    </div>
+
+    <div class="demo-section">
+      <h2>5. Custom Cursor</h2>
+      <p>Terminal with custom prompt character and cursor control.</p>
+      <div id="cursor-terminal"></div>
+    </div>
+
+    <div class="demo-section">
+      <h2>6. Boot Sequence</h2>
+      <p>Simulates a system boot sequence without initial prompt.</p>
+      <div id="boot-terminal"></div>
+    </div>
+
+    <div class="demo-section">
+      <h2>7. Code Execution</h2>
+      <p>Python REPL-style terminal with custom prompt.</p>
+      <div id="code-terminal"></div>
+    </div>
+
+    <div class="demo-section">
+      <h2>8. Factory Method Examples</h2>
+      <p>Creating terminals using the static factory method.</p>
+      <div class="terminal-grid">
+        <div id="factory-terminal-1"></div>
+        <div class="factory-terminal-multi"></div>
+        <div class="factory-terminal-multi"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import './terminal-window-example.js';
+  </script>
+</body>
+</html>

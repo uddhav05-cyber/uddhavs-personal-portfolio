@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glitch Text Component Demo</title>
+  <style>
+    body {
+      background: #0a0a0a;
+      color: #e0e0e0;
+      font-family: 'Courier New', monospace;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: #00ff87;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .demo-section {
+      margin: 3rem 0;
+      padding: 2rem;
+      background: #1a1a1a;
+      border: 1px solid #00ff87;
+      border-radius: 8px;
+    }
+
+    .demo-section h2 {
+      color: #00d9ff;
+      margin-bottom: 1rem;
+    }
+
+    .demo-text {
+      font-size: 2rem;
+      margin: 1rem 0;
+      padding: 1rem;
+      background: #0a0a0a;
+      border: 1px solid rgba(0, 255, 135, 0.3);
+    }
+
+    .controls {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    button {
+      background: transparent;
+      border: 2px solid #00ff87;
+      color: #00ff87;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-family: 'Courier New', monospace;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background: #00ff87;
+      color: #0a0a0a;
+    }
+
+    .slider-control {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    input[type="range"] {
+      flex: 1;
+      max-width: 200px;
+    }
+
+    code {
+      background: #2a2a2a;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      color: #00ff87;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="hero-title">Glitch Text Component Demo</h1>
+
+    <div class="demo-section">
+      <h2>1. Basic Auto-Start Glitch</h2>
+      <p>Default settings with automatic start</p>
+      <div class="demo-text glitch-1">CYBERPUNK PORTFOLIO</div>
+      <code>new GlitchText(element)</code>
+    </div>
+
+    <div class="demo-section">
+      <h2>2. High Intensity Glitch</h2>
+      <p>Increased intensity for more dramatic effect</p>
+      <div class="demo-text glitch-2">SYSTEM OVERRIDE</div>
+      <code>new GlitchText(element, { intensity: 0.8 })</code>
+    </div>
+
+    <div class="demo-section">
+      <h2>3. Continuous Glitch</h2>
+      <p>Constantly glitching text</p>
+      <div class="demo-text glitch-3">ERROR_404_NOT_FOUND</div>
+      <code>new GlitchText(element, { continuous: true })</code>
+    </div>
+
+    <div class="demo-section">
+      <h2>4. Manual Control</h2>
+      <p>Start and stop glitch effect manually</p>
+      <div class="demo-text glitch-4">MANUAL CONTROL MODE</div>
+      <div class="controls">
+        <button id="start-btn">Start Glitch</button>
+        <button id="stop-btn">Stop Glitch</button>
+        <button id="trigger-btn">Trigger Once</button>
+      </div>
+    </div>
+
+    <div class="demo-section">
+      <h2>5. Dynamic Intensity Control</h2>
+      <p>Adjust intensity in real-time</p>
+      <div class="demo-text glitch-5">INTENSITY CONTROL</div>
+      <div class="controls">
+        <div class="slider-control">
+          <label for="intensity-slider">Intensity:</label>
+          <input type="range" id="intensity-slider" min="0" max="100" value="50">
+          <span id="intensity-value">0.5</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="demo-section">
+      <h2>6. Hover-Activated Glitch</h2>
+      <p>Hover over the text to activate glitch effect</p>
+      <div class="demo-text glitch-6">HOVER TO ACTIVATE</div>
+    </div>
+  </div>
+
+  <script type="module">
+    import GlitchText from './glitch-text.js';
+
+    // Demo 1: Basic auto-start
+    const glitch1 = new GlitchText(document.querySelector('.glitch-1'));
+
+    // Demo 2: High intensity
+    const glitch2 = new GlitchText(document.querySelector('.glitch-2'), {
+      intensity: 0.8,
+      frequency: 2000,
+    });
+
+    // Demo 3: Continuous glitch
+    const glitch3 = new GlitchText(document.querySelector('.glitch-3'), {
+      continuous: true,
+      intensity: 0.4,
+      duration: 200,
+    });
+
+    // Demo 4: Manual control
+    const glitch4 = new GlitchText(document.querySelector('.glitch-4'), {
+      autoStart: false,
+    });
+
+    document.getElementById('start-btn').addEventListener('click', () => {
+      glitch4.start();
+    });
+
+    document.getElementById('stop-btn').addEventListener('click', () => {
+      glitch4.stop();
+    });
+
+    document.getElementById('trigger-btn').addEventListener('click', () => {
+      glitch4.triggerGlitch();
+    });
+
+    // Demo 5: Dynamic intensity
+    const glitch5 = new GlitchText(document.querySelector('.glitch-5'));
+    const intensitySlider = document.getElementById('intensity-slider');
+    const intensityValue = document.getElementById('intensity-value');
+
+    intensitySlider.addEventListener('input', (e) => {
+      const intensity = e.target.value / 100;
+      glitch5.setIntensity(intensity);
+      intensityValue.textContent = intensity.toFixed(2);
+    });
+
+    // Demo 6: Hover-activated
+    const glitch6 = new GlitchText(document.querySelector('.glitch-6'), {
+      autoStart: false,
+      intensity: 0.7,
+    });
+
+    document.querySelector('.glitch-6').addEventListener('mouseenter', () => {
+      glitch6.start();
+    });
+
+    document.querySelector('.glitch-6').addEventListener('mouseleave', () => {
+      glitch6.stop();
+    });
+  </script>
+</body>
+</html>
